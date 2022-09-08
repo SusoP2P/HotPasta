@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf952e77-f1fb-4b93-81f9-7d2bcdfeea76" name="Changes" comment="Adding ENV and Interpreter" />
+    <list default="true" id="cf952e77-f1fb-4b93-81f9-7d2bcdfeea76" name="Changes" comment="TestDiscord4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +140,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662606215411</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="TestDiscord2">
+      <created>1662608260984</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662608260984</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TestDiscord3">
+      <created>1662608375535</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662608375535</updated>
+    </task>
+    <task id="LOCAL-00009" summary="TestDiscord4">
+      <created>1662608743230</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662608743230</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +191,9 @@
     <MESSAGE value="Test First Commit" />
     <MESSAGE value="Adding main and settings py files" />
     <MESSAGE value="Adding ENV and Interpreter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding ENV and Interpreter" />
+    <MESSAGE value="TestDiscord2" />
+    <MESSAGE value="TestDiscord3" />
+    <MESSAGE value="TestDiscord4" />
+    <option name="LAST_COMMIT_MESSAGE" value="TestDiscord4" />
   </component>
 </project>

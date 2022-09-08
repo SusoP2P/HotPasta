@@ -1,4 +1,4 @@
-# Hot Pasta - The Copy/Paste tool TestDiscord
+# Hot Pasta - The Copy/Paste tool TestDiscord2
 #
 #
 #

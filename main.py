@@ -1,10 +1,11 @@
-#Hot Pasta - The Copy/Paste tool
+# Hot Pasta - The Copy/Paste tool
 #
 #
 #
 #
-#Reserved for comments and fancy space
+# Reserved for comments and fancy space
+import settings
+settings
 
 
-
-print("Hello world")
+print("Hot Pasta - The Copy/Paste tool")

@@ -1,12 +1,9 @@
-#
+# Module reference file. All dependencies with module-specific files separate.
 #
 #
 #
 # Reserved for comments and fancy space
-
-import configparser
-import defaultsettings
-import internalsettings
+import settings
 
 
 def tutorial():
@@ -21,6 +18,10 @@ def menu_show():
     print("Menu shown")
 
 
+def menu_hide():
+    print("Menu not shown. App started in background")
+
+
 def overlay_show():
     print("Overlay shown")
 
@@ -30,8 +31,11 @@ def SetInternalSettings():
 
 
 def DefaultSettings():
-    defaultsettings.CreateDefaultSettings()
+    settings.CreateDefaultSettings()
 
+
+def SecurityCheck():
+    print("Security Check passed!")
 
 def GenericError():
     print("Generic Error")

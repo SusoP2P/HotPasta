@@ -4,13 +4,16 @@
 #
 #
 # Reserved for comments and fancy space
-import defaultsettings
-import internalsettings
+import settings
 import modules
 
-defaultsettings.check_first_boot()
+
+def INNIT():
+    modules.SecurityCheck()
+    settings.check_first_boot()
 
 
+INNIT()
 
 
 

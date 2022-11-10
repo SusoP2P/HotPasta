@@ -4,52 +4,58 @@
 #
 # Reserved for comments and fancy space
 import configparser
-import modules
+import clipboard as cb
+from modules import *
+
+config = configparser.ConfigParser()  # variable for configparser
 
 # Initialization functions
 
 
-def check_first_boot():  # This checks boot status for Onboarding and potentially other stuff
+def check_first_boot():  # Check boot status for Onboarding and potentially other stuff
     config.read("settings.ini")
-    if config.read("settings.ini") == []:
-        modules.DefaultSettings()
+    if not config.read("settings.ini"):
+        DefaultSettings()
+        # cb.ClipboardCreate()  # This might not be needed
         check_first_boot()
-    elif config["DEFAULT"].getboolean("firstboot") == True:
+    elif config["DEFAULT"].getboolean("firstboot"):
         config["DEFAULT"]["firstboot"] = "False"
         with open('settings.ini', 'w') as configfile:
             config.write(configfile)
-        modules.onboarding()
-    elif config["DEFAULT"].getboolean("firstboot") == False:
-        ShowMenu()
+        onboarding()
+    elif not config["DEFAULT"].getboolean("firstboot"):
+        if config["STARTUP"].getboolean("launchminimized"):
+            print("App launched minimized")
+        if not config["STARTUP"].getboolean("launchminimized"):
+            ShowMenu()
     else:
-        modules.GenericError()
+        generic_error()
 
 
-def ShowMenu():
+def ShowMenu():  # Decide whether to show the menu or not
     config.read("settings.ini")
-    if config["DEFAULT"].getboolean("showmenu") == True:
-        modules.menu_show()
-    elif config["DEFAULT"].getboolean("showmenu") == False:
-        modules.menu_hide()
+    if config["DEFAULT"].getboolean("showmenu"):
+        menu_show()
+    elif not config["DEFAULT"].getboolean("showmenu"):
+        menu_hide()
     else:
-        modules.GenericError()
+        generic_error()
 
 # These are the internal settings that the program needs to run properly
 # They are non-editable by default and only advanced users who understand the code should change them
 # Reserved for comments and fancy space
 
+
 # These are the default settings that users can edit freely
-
-
-config = configparser.ConfigParser()
 
 
 def CreateDefaultSettings():  # Creates the default settings
     config["DEFAULT"] = {"firstboot": "True",
-                     "showmenu": "True",
-                     "Setting3": "0.1"}
-    config["AUDIO"] = {}
-    config["AUDIO"]["Setting21"] = "hg"
+                         "showmenu": "True",
+                         "Setting3": "0.1"}
+    config["STARTUP"] = {}
+    config["STARTUP"]["launchatstartup"] = "True"
+    config["STARTUP"]["launchminimized"] = "True"
     with open("settings.ini", "w") as settingsfile:
         config.write(settingsfile)
     print("Default Settings created")

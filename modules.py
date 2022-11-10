@@ -26,7 +26,7 @@ def overlay_show():
     print("Overlay shown")
 
 
-def SetInternalSettings():
+def set_internal_settings():
     print("Internal Settings set")
 
 
@@ -34,8 +34,9 @@ def DefaultSettings():
     settings.CreateDefaultSettings()
 
 
-def SecurityCheck():
+def security_check():
     print("Security Check passed!")
 
-def GenericError():
+
+def generic_error():
     print("Generic Error")

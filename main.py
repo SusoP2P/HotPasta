@@ -6,16 +6,14 @@
 # Reserved for comments and fancy space
 import settings
 import modules
+# import hotkeys
 
 
 def INNIT():
-    modules.SecurityCheck()
+    modules.security_check()
     settings.check_first_boot()
 
 
-INNIT()
+"INNIT()"
 
-
-
-print("\n""-----------\n""Code finished succesfully")
-print("Hot Pasta - The Copy/Paste tool")
+print("\n""-----------\n""Code finished successfully\nHot Pasta - The Copy/Paste tool.")

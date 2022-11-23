@@ -1,0 +1,15 @@
+[Pasta 1]
+text = b'voy a pedir algo y verme una peli'
+
+[Pasta 2]
+text = b'en el pc hoy no'
+
+[Pasta 3]
+text = b'Dadle vosotros que me acabo de acordar de que se me va la wifi ahora'
+
+[Pasta 4]
+text = b'Pero vamos que si estas con alguien nada'
+
+[Pasta 5]
+text = b" estoy en platino'"
+

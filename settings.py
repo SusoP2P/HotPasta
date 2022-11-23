@@ -4,7 +4,7 @@
 #
 # Reserved for comments and fancy space
 import configparser
-import clipboard as cb
+#  import clipboard as cb  # Circular import
 from modules import *
 
 config = configparser.ConfigParser()  # variable for configparser
@@ -14,9 +14,10 @@ config = configparser.ConfigParser()  # variable for configparser
 
 def check_first_boot():  # Check boot status for Onboarding and potentially other stuff
     config.read("settings.ini")
+
     if not config.read("settings.ini"):
         DefaultSettings()
-        # cb.ClipboardCreate()  # This might not be needed
+        # cb.CheckClipboard()  # This might not be needed. CAREFUL: Potential cirular import
         check_first_boot()
     elif config["DEFAULT"].getboolean("firstboot"):
         config["DEFAULT"]["firstboot"] = "False"
@@ -52,10 +53,9 @@ def ShowMenu():  # Decide whether to show the menu or not
 def CreateDefaultSettings():  # Creates the default settings
     config["DEFAULT"] = {"firstboot": "True",
                          "showmenu": "True",
+                         "cblist_count": "0",
                          "Setting3": "0.1"}
-    config["STARTUP"] = {}
-    config["STARTUP"]["launchatstartup"] = "True"
-    config["STARTUP"]["launchminimized"] = "True"
+    config["STARTUP"] = {"launchatstartup": "True", "launchminimized": "True"}
     with open("settings.ini", "w") as settingsfile:
         config.write(settingsfile)
     print("Default Settings created")
@@ -66,6 +66,3 @@ def CreateDefaultSettings():  # Creates the default settings
 def SaveButton():  # Save button for GUI
     with open("settings.ini", "r") as settingsfile:
         config.write(settingsfile)
-
-
-

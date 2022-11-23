@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf952e77-f1fb-4b93-81f9-7d2bcdfeea76" name="Changes" comment="First Code structure cleanup:&#10;- Internal settings merged with defaultsettings (now settings file)&#10;- ShowMenu added for initialization&#10;- Initialization added on main">
-      <change afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/main.qml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clipboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HotPasta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HotPasta.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cf952e77-f1fb-4b93-81f9-7d2bcdfeea76" name="Changes" comment="First functional code:&#10;&#10;- Working Listeners (I hope)&#10;- Simple Paste, Copy and Copy save as well as first erase functions&#10;- Code Cleanup (modules module still pending)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clipboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/clipboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +39,15 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/suso_/Downloads/base16-tomorrow-dark-intellij.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/suso_/Downloads/intellij-xcode-dark-theme.jar&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -60,7 +55,7 @@
       <recent name="C:\Users\suso_\PycharmProjects\HotPasta\UI" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.clipboard">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HotPasta" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.clipboard" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.hotkeys" />
-        <item itemvalue="Python.GUI" />
         <item itemvalue="Python.UITest" />
+        <item itemvalue="Python.GUI" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663059534761</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="First functional code:&#10;&#10;- Working Listeners (I hope)&#10;- Simple Paste, Copy and Copy save as well as first erase functions&#10;- Code Cleanup (modules module still pending)">
+      <created>1668097722191</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668097722191</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +317,8 @@
     <MESSAGE value="TestDiscord5" />
     <MESSAGE value="First valid code:&#10;- Basic function placeholders&#10;- WIP basic settings&#10;- First boot check" />
     <MESSAGE value="First Code structure cleanup:&#10;- Internal settings merged with defaultsettings (now settings file)&#10;- ShowMenu added for initialization&#10;- Initialization added on main" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Code structure cleanup:&#10;- Internal settings merged with defaultsettings (now settings file)&#10;- ShowMenu added for initialization&#10;- Initialization added on main" />
+    <MESSAGE value="First functional code:&#10;&#10;- Working Listeners (I hope)&#10;- Simple Paste, Copy and Copy save as well as first erase functions&#10;- Code Cleanup (modules module still pending)" />
+    <option name="LAST_COMMIT_MESSAGE" value="First functional code:&#10;&#10;- Working Listeners (I hope)&#10;- Simple Paste, Copy and Copy save as well as first erase functions&#10;- Code Cleanup (modules module still pending)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
